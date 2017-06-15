@@ -1,0 +1,30 @@
+header{
+	display:flex;
+	height:69px;
+	display:fixed;
+	background-color:black;
+	border-bottom:1px solid seashell;
+	align-items:center;
+}
+
+header span{
+	padding:0 10px;
+	font-weight:bold;
+}
+
+a{
+	color:gray;
+}
+
+body{
+	font-family:Helvetica;
+	font-size:22px;
+	color:seashell;
+	background-color:black;
+	opacity:0.9;
+}
+
+.logo{
+	flex-grow:1;
+	padding-left:10px;
+}
