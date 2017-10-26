@@ -51,11 +51,10 @@ header span{
 }
 
 .mission-cover{
-	background-image: url("../img/mission.jpg");
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
 	height:700px;
 	width:1200px;
 	align-items:center;
-	
 }
 
 .mission-cover .mission-content{
@@ -63,14 +62,50 @@ header span{
 	width:100%;
 }
 
+@media only screen and (max-width:975px){
+	.mission-content {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width:975px){
+	.mission-content {
+		display: none;
+	}
+
+	.mission-cover {
+		height:200px;
+		background-position: center;
+	}
+}
+
 .teaofthemonth{
 	width:1000px;
 	height:700px;
-	padding:70px 0;
+	padding:40px 0;
 }
 
 .teaofthemonth .tea-pictures{
 	justify-content:center;
+}
+
+@media only screen and (max-width:975px){
+	.teaofthemonth {
+		width: 700px;
+		height: 900px;
+	}
+}
+
+@media only screen and (max-width:640px){
+	.teaofthemonth {
+		width: 300px;
+		height: 1000px;
+	}
+
+	.teaofthemonth .tea-pictures img{
+		height: 100px;
+		width: 150px;
+	}
 }
 
 figure img{
@@ -100,9 +135,29 @@ figure{
 	padding:10px;
 }
 
+@media only screen and (max-width:1200px){
+	.box{
+		width: 200px;
+		height: 200px;
+		font-size: 12px;
+	}
+}
+
 .locations-cover{
-	background-image: url("../img/coffee.jpg");
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
 	height:500px;
+}
+
+@media only screen and (max-width:880px){
+	.locations-cover{
+		height: 700px;
+	}
+}
+
+@media only screen and (max-width:570px){
+	.locations-cover{
+		height: 800px;
+	}
 }
 
 .contact{
